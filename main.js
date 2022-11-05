@@ -85,12 +85,12 @@ const users = {
   function parserUser(obj) {
     let {name, username, email, address: { street, suite, city, zipcode}, phone, website, company: {catchPhrase},} = obj, 
     userName = `Foydalanuvchinning ismi: ${name}`,
-    userAccount = `Foydalanuvchinning nicki: ${username}`,
+    userAccount = `Foydalanuvchinning imidji: ${username}`,
     userEmail = `Foydalanuvchinning elektron pochtasi: ${email}`,
     userFrom = `Manzil:\nKo'chasi: ${street}\nXonadon: ${suite}\nShahar: ${city}\nPochta indeksi: ${zipcode}`,
     userPhoneNumber = `Foydalanuvchining telefon raqami: ${phone}`,
     userWeb = `Kompaniya web-sayti: ${website}`,
-    userCompany = `Kompaniya shiori: ${catchPhrase}`,
+    userCompany = `Kompaniya frazasi: ${catchPhrase}`,
     userInfo = `${userName}\n${userAccount}\n${userEmail}\n${userFrom}\n${userPhoneNumber}\n${userWeb}\n${userCompany}`
     return userInfo 
   }
